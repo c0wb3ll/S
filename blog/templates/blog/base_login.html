@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> c0wb3ll's Web </title>
+    {% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+	<div class="frame">
+		<div class="header">
+			<div class="logo">c0wb3ll's Web</div>
+		</div>
+		<div class="container">
+			<div class="nav">
+				<ul class="nav-list">
+					<li class="nav-item"><button class="tab_menu_btn" onclick="setTimeout(function(){location.href = '{% url 'blog_home'%}'})">Home</button></li>
+					<li class="nav-item"><button class="tab_menu_btn" onclick="setTimeout(function(){location.href = '{% url 'notice_list'%}'})">Notice</button></li>
+					<li class="nav-item"><button class="tab_menu_btn" onclick="setTimeout(function(){location.href = '{% url 'board_list'%}'})">Board</button></li>
+					<li class="nav-item"><button class="tab_login_btn" onclick="setTimeout(function(){location.href = '{% url 'blog_logout'%}'})">Logout</button></li>
+				</ul>
+			</div>
+			<div class="content">
+                {% block content %}
+                {% endblock %}
+                {{ linebreaksbr }}
+			</div>
+		</div>
+		<div class="footer">
+			<p class="copyright">&copy;copy</p>
+		</div>
+	</div>
+</body>
+</html>

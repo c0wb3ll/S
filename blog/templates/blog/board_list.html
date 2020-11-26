@@ -1,0 +1,15 @@
+{% extends 'blog/base_login.html' %}
+{% block content %}
+<h1 style="font-size: 40px; margin-bottom: 1%;"> Board </h1>
+<hr style="margin-right: 3%;"><p></p>
+<div class="notice">
+    {% if not boards %}
+    <h1 style="align: center;">Nothing!</h1>
+    {% endif %}
+    {% for board in boards %}
+    <h2><a href="{% url 'board_detail' pk=board.pk %}">{{ board.title }}</a></h2>
+    <p>{{ board.contents|linebreaksbr }}</p>
+    {% endfor %}
+    <button class="notice"><a href="{% url 'board_write'%}">write</a></button>
+</div>
+{% endblock %}

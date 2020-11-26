@@ -1,0 +1,14 @@
+{% extends "blog/base_login.html" %}
+{% block content %}
+<h1 style="font-size: 40px; margin-bottom: 1%;"> Notice </h1>
+<hr style="margin-right: 3%;"><p></p>
+{% for notice in notices %}
+<div class="notice">
+    <h2><a href="{% url 'notice_detail' pk=notice.pk %}">{{ notice.title }}</a></h2>
+    <p>{{ notice.text|linebreaksbr }}</p>
+</div>
+<div class="date">
+    <p>created : {{ notice.created_date }}</p>
+</div>
+{% endfor %}
+{% endblock %}

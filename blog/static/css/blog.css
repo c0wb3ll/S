@@ -1,0 +1,121 @@
+body{
+	font: 14px/1.8 Arial, Helvetica, sans-serif;
+}
+
+.frame{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #aaa;
+}
+
+.header{
+	padding: 10% 1%;
+	text-align: center;
+	background-color: #eee;
+	border-bottom: 1px solid #aaa;
+}
+
+.logo {
+	font-size: 300%;
+	font-weight: bold;
+	background: #5457de;
+	color: #fff;
+	display: inline-block;
+	padding: 0 8px;
+}
+
+.container{
+	overflow: hidden;
+	background: #333;
+}
+
+.nav{
+	float: left;
+	width: 20%;
+	background: #333;
+	color: #fff;
+}
+
+.nav-list{
+	list-style: none;
+	margin: 0;
+	padding: 2% 0;
+}
+
+.nav-item{
+	margin: 1%;
+	padding: 0%;
+}
+
+.content{
+	float: left;
+	width: 77%;
+	background: #fff;
+	padding-left: 3%;
+	padding-bottom: 3%;
+	min-height: 1000px;
+}
+
+.footer{
+	text-align: center;
+	border-top: 1px solid #aaa;
+	margin: : 20px 20px 0;
+	font-size: 12px;
+}
+
+button{
+	width: 10%; height: 40px;
+	background: none;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	padding:0;
+	margin: 0;
+}
+
+.nav-item>button {
+	width: 100%;height: 100%;
+	color: #fff;
+  	padding: 10%;
+}
+
+.nav-item>.tab_menu_btn:hover{
+  color: skyblue;
+}
+
+.date{
+    color: #828282;
+}
+
+.save{
+    float: right;
+}
+
+.notice h2 a, .post h2 a:visited{
+    text-decoration: none;
+    color: #000000;
+}
+
+.notice h2 a:hover{
+    color: #828282;
+}
+
+.notice button{
+    align: bottom;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-right: -4px;
+    border: 1px solid #444;
+    background-color: #fff;
+    color: skyblue;
+    padding:5px;
+}
+
+.notice button:hover{
+    color: white;
+    background-color: skyblue;
+}
+
+.notice a, a:visited{
+    text_decoration: none;
+}
